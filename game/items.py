@@ -85,3 +85,35 @@ class Flintlock(Item):
         self.skill = "guns"
         self.verb = "shoot"
         self.verb2 = "shoots"
+#2xblunderbass( 6x damage of flintlock, not as quick fire, 1000 shillings), gold pendant, emerald crown, island key, obsidian sword)
+
+class Blunderbass(Item):
+    def __init__(self):
+        super().__init__("Blunderbass", 800) #Note: price is in shillings (a silver coin, 20 per pound)
+        self.damage = (60,100)
+        self.firearm = True
+        self.charges = 1
+        self.skill = "guns"
+        self.verb = "shoot"
+        self.verb2 = "shoots"
+
+
+class Obsidian_Sword(Item):
+    def __init__(self):
+        super().__init__("Obsidian_Sword", 1000) #Note: price is in shillings (a silver coin, 20 per pound)
+        self.damage = (50,100)
+        self.skill = "swords"
+        self.verb = "slash"
+        self.verb2 = "slashes"
+    
+class Emerald_Crown(Item):
+    def __init__(self):
+        super().__init__("Emerald_Crown", 500) #Note: price is in shillings (a silver coin, 20 per pound)
+
+class Tower_Key(Item):
+    def __init__(self):
+        super().__init__("Tower_Key", 100) #Note: price is in shillings (a silver coin, 20 per pound)
+
+class Gold_Pendant(Item):
+    def __init__(self):
+        super().__init__("Gold_Pendant", 500) #Note: price is in shillings (a silver coin, 20 per pound)

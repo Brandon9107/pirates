@@ -87,3 +87,27 @@ class Drowned(Monster):
         attacks["punch 2"] = ["punches",random.randrange(35,51), (1,10)]
         #7 to 19 hp, bite attack, 65 to 85 speed (100 is "normal")
         super().__init__(name, random.randrange(7,20), attacks, 75 + random.randrange(-10,11))
+
+class Rogue_Pirate(Monster):
+    def __init__ (self, name):
+        attacks = {}
+        attacks["slash"] = ["slashes",random.randrange(60,80), (5,15)]
+        attacks["tackle"] = ["tackle",random.randrange(35,51), (5,10)]
+        super().__init__("Rogue Pirate", random.randrange(7,20), attacks, 75 + random.randrange(-10,11))
+
+class Stone_Golem(Monster):
+    def __init__ (self, name):
+        attacks = {}
+        attacks["punch 1"] = ["punches",random.randrange(35,51), (1,10)]
+        attacks["punch 2"] = ["punches",random.randrange(35,51), (1,10)]
+        attacks["ground_attack"]=["ground_attack", random.randrange(70, 100), (1,10)]
+        super().__init__("Stone Golem", random.randrange(250,300), attacks, 75 + random.randrange(-10,11))
+
+class Golemites(Monster):
+    def __init__ (self, name):
+        attacks = {}
+        attacks["bite"] = ["bites",random.randrange(35,51), (5,15)]
+        attacks["punch 2"] = ["punches",random.randrange(35,51), (1,10)]
+        super().__init__("Golemites", random.randrange(7,20), attacks, 75 + random.randrange(-10,11))
+
+    
